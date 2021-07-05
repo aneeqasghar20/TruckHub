@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>pcoint</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <link rel="stylesheet" href="css/custom.css">
+
+
+
+        <!-- fevicon -->
+        <link rel="stylesheet" href="css/authenticationScreens.css">
+
+        <link rel="icon" href="images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     </head>
+<body>
+
+    
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<!-- <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div> -->
+			<input type="text" placeholder="Name" />
+			<input type="text" placeholder="NIC" />
+			<input type="text" placeholder="Address" />
+			<!-- <div class="nice-select">
+			</div> -->
+				<!-- <select class= "formInputGrp">
+					
+				</select> -->
+
+				<select class="form-control formInputGrp mt-2 mb-2" id="exampleFormControlSelect2">
+					<p>Select Type</p>
+					<option value="0">Silver</option>
+					<option value="1">Gold</option>
+				</select> 
+
+				<input type="text" placeholder="Magazine Choice" />
+				<input type="text" placeholder="Seat preference" />
+<!-- 
+				<select class="form-control formInputGrp mt-2" id="exampleFormControlSelect2">
+					<p>Select </p>
+					<option value="0">Silver</option>
+					<option value="1">Gold</option>
+				</select>  -->
+
+
+				<!-- <div class = "row">
+					<div class="col flex">
+						<p>Silver</p>
+						<input type="radio" value="0" placeholder="Silver">
+					</div>
+					<div class="col flex">
+						<input type="radio" value="1" placeholder="Gold">
+					</div>
+				</div> -->
+			<div class="sign_btn"><a href="./SignIn.html">Register</a></div>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in as a passenger</h1>
+			<!-- <div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div> -->
+			<span>or use your account</span>
+			<input type="text" placeholder="NIC" />
+			<!-- <input type="password" placeholder="Password" /> -->
+			<!-- <a href="#">Forgot your password?</a> -->
+			<div class="sign_btn"><a href="./SignIn.html">Sign in</a></div>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Are you new the admin?</h1>
+				<p>Enter this as a admin</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const container = document.getElementById('container');
+const myform = document.getElementsByClassName('formInputGrp');
+
+signUpButton.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+	myform.classList.remove("nice-select")
+});
+
+signInButton.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
+</script>
+<script>
+	$(document).ready(function() {
+    $(".formInputGrp").removeClass("nice-select");
+});
+</script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+</html>
